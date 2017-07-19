@@ -9,7 +9,7 @@ Download and unzip this package [here][download].
 
 Move with the terminal into the folder.  
 
-    cd ~/Downloads/simplest-express-server/
+    cd ~/Downloads/c2c-with-nodejs/simplest-express-server/
 
 Install the modules
 
@@ -31,7 +31,7 @@ Now you can add your code in the index.js file to control things in the backend[
 
 <!-- links -->
 
-[download]: https://github.com/fabianmoronzirfas/simplest-express-server/archive/master.zip
+[download]: https://github.com/fabianmoronzirfas/c2c-with-nodejs/archive/master.zip
 [host]: http://localhost:3000
 [twit]: https://github.com/ttezel/twit
 [j5]: https://github.com/rwaldron/johnny-five

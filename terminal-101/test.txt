@@ -1,0 +1,3 @@
+index.md
+out.gif
+test.txt
