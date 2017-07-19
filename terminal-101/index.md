@@ -26,7 +26,6 @@ patat:
 
 Das Terminal ist ein Interface für euren Computer in dem Ihr Textbefehle eingeben und ausführen könnt.  
 
-![](out.gif)
 
 ---
 
@@ -50,7 +49,7 @@ Die Windows Eingabeaufforderung ist zu öffnen indem im Startmenü nach
 
     CMD
 
-gesucht wird.  
+gesucht wird. Für die Nutzung mit Node.js kann auch der `Node command prompt` genutzt werden.  
 
 ---
 
@@ -62,26 +61,20 @@ Das Terminal ist eine textbasierte Representation des Dateisystems. Alle Ordner 
 
 # Topics  
 
-- Dateien auflisten
-- Aktuelle Position ermitteln
-- Durch Ordner navigieren
+- Durch Ordner navigieren `cd`
+- Oft genutzte Befehle
+    - Dateien auflisten `ls`
+    - Manual anzeigen `man` / `HELP`
+    - Inhalt von Dateien sehen `cat` / `type`
+    - Historie anzeigen `history`
+    - Aktuelle Position ermitteln `pwd`
+    - Dateien erstellen `touch` 
+    - Ordner erstellen `mkdir`
+    - Dateien/Ordner öffnen `open` / `start`
+    - Dateien/Ordner löschen `rm` / `del` / `deltree` ACHTUNG
 - Programme & Dateien ausführen (Node.js)
-- Package Manager (npm)
+- Package Manager `npm`
 - Tiefer einsteigen
-
----
-
-# Dateien Auflisten
- 
-Unix: `ls`   
-
-Win: `dir`  
-
----
-
-# Aktuelle Position Ermitteln
-
-    pwd
 
 ---
 
@@ -133,6 +126,112 @@ Noch weiter "runter" im Dateibaum geht es mit dem Befehl
 Um es sich einfacher zu machen können Ordner auch per Drag & Drop in die Kommandozeile gezogen werden. Dies setzt dann den Pfad ein. Davor muss jedoch `cd ` eingegeben werden _(Das Leerzeichen nicht vergessen)_.  
 
 ---
+
+# Oft genutzte Befehle
+
+Ich bin auf Unix Systemen zuhause. Daher kenne ich nicht all Windows Equivalente. Hier gibt es eine [Vergleichsliste](https://www.lemoda.net/windows/windows2unix/windows2unix.html).  
+
+---
+
+## Dateien Auflisten
+ 
+Unix: `ls`   
+
+Win: `dir`  
+
+
+---
+
+## Manual Anzeigen
+
+Unix: `man`  
+
+Win: `HELP`
+
+z.B.  
+
+Unix: `man ls`  
+
+Win: `HELP dir`
+
+---
+
+## Inhalt von Dateien sehen `cat`
+
+
+Unix: `cat`  
+
+Win: `type`
+
+z.B.  
+
+Unix: `cat some-random-file.js`  
+
+Win: `type some-random-file.js`
+
+---
+
+
+## Historie anzeigen 
+
+Unix: `history`  
+
+Win: …  
+
+
+---
+
+## Aktuelle Position Ermitteln
+
+    pwd
+
+---
+
+## Dateien erstellen
+
+Unix: `touch`  
+
+Win: …  
+
+---
+
+## Ordner erstellen
+
+`mkdir`
+
+---
+
+## Dateien öffnen
+
+Unix: `open`  
+
+Win: `start`  
+
+---
+
+## Ordner öffnen
+
+Unix: `open .`  
+
+Win: `start .`  
+
+---
+
+## Dateien löschen 
+
+Unix: `rm`  
+
+Win: `del`
+
+---
+
+## Ordner löschen
+
+Unix: `rm -r`  
+Win: `deltree`  
+
+---
+
 
 # Prgramme ausführen
 
