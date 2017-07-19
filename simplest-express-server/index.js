@@ -5,6 +5,16 @@ var server = require('http').createServer(app); // create a new server
 var io = require('socket.io'); // include the socket.io library
 var socket = io.listen(server); // tell socket to listen ti the server
 var board = new five.Board();
+var Twit = require('twit');
+
+var T = new Twit({
+  consumer_key: '...',
+  consumer_secret: '...',
+  access_token: '...',
+  access_token_secret: '...',
+  timeout_ms: 60 * 1000  // optional HTTP request timeout to apply to all requests.
+});
+
 
 var port = 3000; // this is the port where we connect
 
@@ -26,6 +36,10 @@ board.on('ready', function() {
     // log what the client is sending
 
     button.on('down', function() {
+      T.post('statuses/update', {status: 'I\'m a fancy twitter bot'}, function(err, data, response) {
+        console.log(data);
+      });
+
       client.send('down');
     });
 

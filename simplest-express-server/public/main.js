@@ -21,6 +21,7 @@
     // do some action based on the users clicks
     const button1 = document.getElementById('button1');
     const button2 = document.getElementById('button2');
+
     // const button3 = document.getElementById('button3');
     // const button4 = document.getElementById('button4');
 
@@ -31,9 +32,13 @@
 
     socket.on('message', function(msg) {
       if(msg === 'up') {
+        document.body.style.backgroundColor = 'white';
+        document.getElementById('target').style.color = 'black';
         console.log('you released the button');
       }
       if(msg === 'down') {
+        document.body.style.backgroundColor = 'black';
+        document.getElementById('target').style.color = 'white';
         console.log('you pressed the button');
       }
     });
