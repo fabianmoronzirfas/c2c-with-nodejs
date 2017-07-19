@@ -1,5 +1,7 @@
 # c2c-with-nodejs
-"Computer 2 Computer Communication" done with Node.js, Express.js, Johnny Five and Socket.io.
+
+These files are the starting point for the "Computer 2 Computer Communication" done with Node.js, Express.js, Johnny Five and Socket.io workshop @ University of Applied Sciences Potsdam (Germany).  
+
 
 ## ToDo:  
 
