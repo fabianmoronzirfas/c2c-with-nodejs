@@ -5,9 +5,9 @@ These files are the starting point for the "Computer 2 Computer Communication" d
 
 ## ToDo:  
 
-- [ ] start the [server][start]
-- [ ] add [Johnny Five][j5] to simple [express][ex] server and [blink][blink] from frontend via [socket.io][sio]
-- [ ] move frontend [JS][js] and [CSS][css] into files
+- [x] start the [server][start] `node index.js`
+- [x] add [Johnny Five][j5] to simple [express][ex] server and [blink][blink] from frontend via [socket.io][sio]
+- [x] move frontend [JS][js] and [CSS][css] into files
 - [ ] add [pullup push button][button] and [toggle][sto1] body [background-color][mdn1]
 - [ ] send a Tweet on button push using [Twit][tw]
 
