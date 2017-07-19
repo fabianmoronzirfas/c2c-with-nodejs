@@ -1,0 +1,56 @@
+strict digraph j5express{
+  fontname="Open Sans";
+  rankdir=BT;
+  #rank=same;
+  ranksep=3;
+  #concentrate= true;
+
+  node[shape=box, fixedsize=true, width=5, height=2,labelloc=c,
+  margin=0.5, fontname="Open Sans"];
+  edge[arrowhead=normal, fontname="Open Sans"];
+#  Backend [shape=record, label="<b>Backend|{<b0>Express.js|<b1>Johnny-Five|<b2>Socket.io}"];
+#  Frontend [shape=record, label="<f>Frontend|{<f0> index.html|{<f1>style.css|{<f2>main.js|<f3>Socket.io}}}"];
+#
+#  Frontend -> Browser [dir=both];
+#  Frontend:f3 -> Backend:b2 [dir=both];
+#  Backend:b -> Frontend:f[dir=both];
+#
+
+b[label="Browser", rank="max"];
+
+bn[label="Backend"];
+bindex[label="index.js"];
+bexp[label="Express.js"];
+bj5[label="Johnny-Five"];
+bsock[label="socket.io"];
+
+fn[label="Frontend"];
+fjs[label="main.js"];
+fcss[label="style.css"];
+findex[label="index.html"];
+fsock[label="socket.io"];
+
+
+subgraph cluster_backend{
+
+bexp -> bindex;
+bj5 -> bindex;
+bsock -> bindex;
+bindex -> bn;
+}
+
+#--------
+subgraph cluster_frontend{
+  rank=max;
+fjs -> findex;
+fcss -> findex;
+fsock -> findex;
+findex -> fn;
+}
+#--------
+
+bsock -> fsock[dir=both];
+
+bn -> fn[dir=both];
+b -> fn[dir=both];
+}
